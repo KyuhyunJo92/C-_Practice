@@ -1,0 +1,1 @@
+Formula : 123+123  result : 246
