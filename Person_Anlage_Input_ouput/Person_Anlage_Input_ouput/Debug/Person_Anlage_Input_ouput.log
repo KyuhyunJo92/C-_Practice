@@ -1,0 +1,16 @@
+﻿  stdafx.cpp
+  Person_Anlage_Input_ouput.cpp
+c:\users\kjo\documents\visual studio 2015\projects\person_anlage_input_ouput\person_anlage_input_ouput\person_anlage_input_ouput.cpp(183): warning C4018: "<": Konflikt zwischen "signed" und "unsigned"
+c:\users\kjo\documents\visual studio 2015\projects\person_anlage_input_ouput\person_anlage_input_ouput\person_anlage_input_ouput.cpp(199): warning C4018: "<": Konflikt zwischen "signed" und "unsigned"
+c:\users\kjo\documents\visual studio 2015\projects\person_anlage_input_ouput\person_anlage_input_ouput\person_anlage_input_ouput.cpp(214): warning C4018: "<": Konflikt zwischen "signed" und "unsigned"
+c:\users\kjo\documents\visual studio 2015\projects\person_anlage_input_ouput\person_anlage_input_ouput\person_anlage_input_ouput.cpp(239): warning C4018: "<": Konflikt zwischen "signed" und "unsigned"
+c:\users\kjo\documents\visual studio 2015\projects\person_anlage_input_ouput\person_anlage_input_ouput\person_anlage_input_ouput.cpp(253): warning C4018: "<": Konflikt zwischen "signed" und "unsigned"
+c:\users\kjo\documents\visual studio 2015\projects\person_anlage_input_ouput\person_anlage_input_ouput\person_anlage_input_ouput.cpp(266): warning C4018: "<": Konflikt zwischen "signed" und "unsigned"
+c:\users\kjo\documents\visual studio 2015\projects\person_anlage_input_ouput\person_anlage_input_ouput\person_anlage_input_ouput.cpp(279): warning C4018: "<": Konflikt zwischen "signed" und "unsigned"
+c:\users\kjo\documents\visual studio 2015\projects\person_anlage_input_ouput\person_anlage_input_ouput\person_anlage_input_ouput.cpp(304): warning C4018: "<": Konflikt zwischen "signed" und "unsigned"
+c:\users\kjo\documents\visual studio 2015\projects\person_anlage_input_ouput\person_anlage_input_ouput\person_anlage_input_ouput.cpp(317): warning C4018: "<": Konflikt zwischen "signed" und "unsigned"
+c:\users\kjo\documents\visual studio 2015\projects\person_anlage_input_ouput\person_anlage_input_ouput\person_anlage_input_ouput.cpp(330): warning C4018: "<": Konflikt zwischen "signed" und "unsigned"
+c:\users\kjo\documents\visual studio 2015\projects\person_anlage_input_ouput\person_anlage_input_ouput\person_anlage_input_ouput.cpp(343): warning C4018: "<": Konflikt zwischen "signed" und "unsigned"
+c:\users\kjo\documents\visual studio 2015\projects\person_anlage_input_ouput\person_anlage_input_ouput\person_anlage_input_ouput.cpp(438): warning C4101: "buff": Unreferenzierte lokale Variable
+  Person_Anlage_Input_ouput.vcxproj -> C:\Users\kjo\Documents\Visual Studio 2015\Projects\Person_Anlage_Input_ouput\Debug\Person_Anlage_Input_ouput.exe
+  Person_Anlage_Input_ouput.vcxproj -> C:\Users\kjo\Documents\Visual Studio 2015\Projects\Person_Anlage_Input_ouput\Debug\Person_Anlage_Input_ouput.pdb (Full PDB)
