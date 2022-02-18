@@ -1,0 +1,4 @@
+﻿  Entwurfsmuster_Observer.cpp
+c:\users\kjo\documents\visual studio 2015\projects\entwurfsmuster_observer\entwurfsmuster_observer\entwurfsmuster_observer.cpp(141): warning C4305: "Argument": Verkürzung von "double" in "float"
+  Entwurfsmuster_Observer.vcxproj -> C:\Users\kjo\Documents\Visual Studio 2015\Projects\Entwurfsmuster_Observer\Debug\Entwurfsmuster_Observer.exe
+  Entwurfsmuster_Observer.vcxproj -> C:\Users\kjo\Documents\Visual Studio 2015\Projects\Entwurfsmuster_Observer\Debug\Entwurfsmuster_Observer.pdb (Full PDB)
