@@ -1,0 +1,75 @@
+﻿<Window x:Class="MaxTemp.MainWindow"
+xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+         xmlns:local="clr-namespace:MaxTemp"
+         mc:Ignorable="d"
+         Title="MainWindow" Height="450" Width="800" ResizeMode="NoResize">
+    <Viewbox>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100px"/>
+                <ColumnDefinition Width="70px"/>
+                <ColumnDefinition Width="150px"/>
+                <ColumnDefinition Width="100px" />
+                <ColumnDefinition Width="50px" />
+                <ColumnDefinition Width="30px" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="25px" />
+                <RowDefinition Height="25px" />
+                <RowDefinition Height="25px" />
+                <RowDefinition Height="25px" />
+                <RowDefinition Height="25px" />
+                <RowDefinition Height="25px" />
+                <RowDefinition Height="25px" />
+                <RowDefinition Height="25px" />
+            </Grid.RowDefinitions>
+            
+            <Image Grid.Column=" 0" Grid.Row="0" Name="imgServerRaum" Grid.RowSpan="6" Source="/images/Image2.gif" ></Image>
+            <ListView Grid.Column="1" Grid.Row="0" Name="sensorName_0"  Margin="3,0,0,0">sensor</ListView>
+            <ListView Grid.Column="1" Grid.Row="1" Name="sensorName_1"  Grid.ColumnSpan="2" Margin="3,0,0,0"></ListView>
+            <ListView Grid.Column="1" Grid.Row="2" Name="sensorName_2"  Grid.ColumnSpan="2" Margin="3,0,0,0"></ListView>
+            <ListView Grid.Column="1" Grid.Row="3" Name="sensorName_3"  Grid.ColumnSpan="2" Margin="3,0,0,0"></ListView>
+            <ListView Grid.Column="1" Grid.Row="4" Name="sensorName_4"  Grid.ColumnSpan="2" Margin="3,0,0,0"></ListView>
+            <ListView Grid.Column="1" Grid.Row="5" Name="sensorName_B"  Grid.ColumnSpan="2" Margin="3,0,0,0"></ListView>
+            <ListView Grid.Column="1" Grid.Row="6" Name="sensorName_D"  Grid.ColumnSpan="2" Margin="3,0,0,0"></ListView>
+            <!--<Button Grid.Column="1" Grid.Row="7" Name="Button_1_7" Grid.ColumnSpan="3" Width="80" Height="25" Click="uiBtn_Read_Click" Margin="2">Refresh</Button>-->
+            <Button Grid.Column="1" Grid.Row="7" Name="Button_3_7" Grid.ColumnSpan="3" Width="80" Height="25" Click="btnReadFile_Click">Refresh</Button>
+
+
+            <ListView Grid.Column="2" Grid.Row="0" Name="time_0"  Margin="3,0,0,0">time</ListView>
+            <ListView Grid.Column="2" Grid.Row="1" Name="time_1"  Margin="3,0,0,0" Visibility="Hidden"></ListView>
+            <ListView Grid.Column="2" Grid.Row="2" Name="time_2"  Margin="3,0,0,0" Visibility="Hidden"></ListView>
+            <ListView Grid.Column="2" Grid.Row="3" Name="time_3"  Margin="3,0,0,0" Visibility="Hidden"></ListView>
+            <ListView Grid.Column="2" Grid.Row="4" Name="time_4"  Margin="3,0,0,0" Visibility="Hidden"></ListView>
+            <ListView Grid.Column="2" Grid.Row="5" Name="time_B"  Margin="3,0,0,0" Visibility="Hidden"></ListView>
+            <ListView Grid.Column="2" Grid.Row="6" Name="time_D"  Margin="3,0,0,0" Visibility="Hidden"></ListView>
+
+            <ListView Grid.Column="3" Grid.Row="0" Name="temp_0"  Margin="3,0,0,0">temp</ListView>
+            <ListView Grid.Column="3" Grid.Row="1" Name="temp_1"  Margin="3,0,0,0"></ListView>
+            <ListView Grid.Column="3" Grid.Row="2" Name="temp_2"  Margin="3,0,0,0"></ListView>
+            <ListView Grid.Column="3" Grid.Row="3" Name="temp_3"  Margin="3,0,0,0"></ListView>
+            <ListView Grid.Column="3" Grid.Row="4" Name="temp_4"  Margin="3,0,0,0"></ListView>
+            <ListView Grid.Column="3" Grid.Row="5" Name="temp_B"  Margin="3,0,0,0"></ListView>
+            <ListView Grid.Column="3" Grid.Row="6" Name="temp_D"  Margin="3,0,0,0"></ListView>
+
+            <TextBlock Grid.Column="4" Grid.Row="0" Name="highTemp" Margin="3,0,0,0">Highest</TextBlock>
+            <ListView Grid.Column="4" Grid.Row="1" Name="highTemp_1"></ListView>
+            <ListView Grid.Column="4" Grid.Row="2" Name="highTemp_2"></ListView>
+            <ListView Grid.Column="4" Grid.Row="3" Name="highTemp_3"></ListView>
+            <ListView Grid.Column="4" Grid.Row="4" Name="highTemp_4"></ListView>
+            <ListView Grid.Column="4" Grid.Row="5" Name="highTemp_B"></ListView>
+            <ListView Grid.Column="4" Grid.Row="6" Name="highTemp_D"></ListView>
+
+            <TextBlock Grid.Column="5" Grid.Row="0" Name="Alarm">Alarm</TextBlock>
+            <StackPanel Grid.Column="5" Grid.Row="1" Name="Alarm_1"></StackPanel>
+            <StackPanel Grid.Column="5" Grid.Row="2" Name="Alarm_2"></StackPanel>
+            <StackPanel Grid.Column="5" Grid.Row="3" Name="Alarm_3"></StackPanel>
+            <StackPanel Grid.Column="5" Grid.Row="4" Name="Alarm_4"></StackPanel>
+            <StackPanel Grid.Column="5" Grid.Row="5" Name="Alarm_B"></StackPanel>
+            <StackPanel Grid.Column="5" Grid.Row="6" Name="Alarm_D"></StackPanel>
+        </Grid>
+    </Viewbox>
+</Window>
