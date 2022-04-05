@@ -1,6 +1,6 @@
- #pragma once
-
+#pragma once
 #include "Common.h"
+#include "Address.h"
 
 //person list
 class Person
@@ -19,7 +19,7 @@ public:
 	map<address::TYPE, address> addresses;
 
 	//construct
-	Person() 
+	Person()
 	{
 		nachname = "default";
 		vorname = "default";
@@ -116,38 +116,38 @@ public:
 	{
 		string _sex;
 
-		switch (sex) 
+		switch (sex)
 		{
-		case SEX::male :
+		case SEX::male:
 			_sex = "Male"; break;
-		case SEX::female :
+		case SEX::female:
 			_sex = "Female"; break;
-		case SEX::undefined :
+		case SEX::undefined:
 			_sex = "Undefined"; break;
-		default :
+		default:
 			cout << "Geschlecht nicht ausgewaehlt wird."; break;
 		}
 		return _sex;
 	}
 	void setSex(int i)
 	{
-		
+
 		switch (i)
 		{
 		case 1: sex = SEX::male;/*
-			cout << "set Geschlecht : Male" << endl;*/
+								cout << "set Geschlecht : Male" << endl;*/
 			break;
 
 		case 2: sex = SEX::female;/*
-			cout << "set Geschlecht : Female" << endl;*/
+								  cout << "set Geschlecht : Female" << endl;*/
 			break;
 
 		case 3: sex = SEX::undefined;/*
-			cout << "set Geschlecht : undefinded" << endl;*/
+									 cout << "set Geschlecht : undefinded" << endl;*/
 			break;
 
 		default:/*
-			cout << "wrong Input." << endl;*/
+				cout << "wrong Input." << endl;*/
 			break;
 		}
 	}
@@ -181,15 +181,15 @@ public:
 
 		switch (stadt)
 		{
-		case STADT::Stuttgart :
+		case STADT::Stuttgart:
 			_stadt = "Stuttgart"; break;
-		case STADT::Filderstadt :
+		case STADT::Filderstadt:
 			_stadt = "Filderstadt"; break;
-		case STADT::Frankfurt :
+		case STADT::Frankfurt:
 			_stadt = "Frankfurt"; break;
-		case STADT::Berlin :
+		case STADT::Berlin:
 			_stadt = "Berlin"; break;
-		case STADT::Unselected :
+		case STADT::Unselected:
 			_stadt = "Unselected"; break;
 		}
 		return _stadt;
@@ -254,11 +254,3 @@ public:
 		}
 	}
 };
-
-
-
-//search
-//sort_searched_result
-//change_info
-//register
-//deregister

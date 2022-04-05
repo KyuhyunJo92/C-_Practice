@@ -3,60 +3,60 @@
 #include "Address.h"
 #include "Person.h"
 #include <vector>
-
+//command implementierung : 
 class PersonDB
 {
 private:
 	map <int, Person*>::iterator it;
-	map <int, Person*> personen ;
+	map <int, Person*> personen;
 
 	//Zweite output muss 2, aber se ist 1000... problem
 	int createNewNonDuplicateUserNum()
 	{
 		int count = 0;
 
-		for (it = personen.begin(); it != personen.end();it++)
+		for (it = personen.begin(); it != personen.end(); it++)
 		{
-				if (it->first == count)
-				{
-					count++;
-				}
+			if (it->first == count)
+			{
+				count++;
+			}
 		}
 		return count;
 	}
-		//for (int i = 0; i < 1000; i++)
-		//	{
-		//		if (it->first == i)
-		//		{
-		//			count = count + i;
-		//			it++;
-		//		}
-		//		else if( it->first)
-		//		{
-		//			return count;
-		//		}
-		//}
-		//int NewUserNum = 1;
-		//int i = 1;
-		//int j = 1;
-		//it = personen.begin();
-		//
-		//createNewNonDuplicateUserNum()
-		//while (it != personen.end())
-		//{
-		//	while (i)
-		//	{
-		//		if (it->second != nullptr) //if there is a value
-		//		{
-		//			if (it->first == j) //compare 
-		//			{
-		//				j++; 
-		//			}
-		//		}
-		//		else i = 0;
-		//	}
-		//	it++;
-		//}
+	//for (int i = 0; i < 1000; i++)
+	//	{
+	//		if (it->first == i)
+	//		{
+	//			count = count + i;
+	//			it++;
+	//		}
+	//		else if( it->first)
+	//		{
+	//			return count;
+	//		}
+	//}
+	//int NewUserNum = 1;
+	//int i = 1;
+	//int j = 1;
+	//it = personen.begin();
+	//
+	//createNewNonDuplicateUserNum()
+	//while (it != personen.end())
+	//{
+	//	while (i)
+	//	{
+	//		if (it->second != nullptr) //if there is a value
+	//		{
+	//			if (it->first == j) //compare 
+	//			{
+	//				j++; 
+	//			}
+	//		}
+	//		else i = 0;
+	//	}
+	//	it++;
+	//}
 
 	int checkSexAndPutNumOut(string _dummyString)
 	{
@@ -65,7 +65,7 @@ private:
 		if (_dummyString == "Undefined") i = 0;
 		else if (_dummyString == "Male") i = 1;
 		else if (_dummyString == "Female") i = 2;
-		
+
 		return i;
 	}
 	int checkStadtAndPutNumOut(string _dummyString)
@@ -81,33 +81,33 @@ private:
 		return i;
 
 	}
-		////finde neue nicht doppelte Nummer.
-		//if (!personen[0]->)
-		//{
-		//	NewUserNum = 1;
-		//}
-		//else
-		//{
-		//	for (it = personen.begin(); it != personen.end(); it++)
-		//	{
-		//		////만약 해당 자리에 정보가 저장되어 있지 않다면
-		//		//if(!it->first <1000)
-		//		//{
-		//			//1000이 넘어가지 않는 범위 내에서
-		//		if (count < 1000) {
-		//			NewUserNum = count + 1;
-		//			//새로운 사용자번호를 지정한다.
-		//			return NewUserNum;
-		//		}
-		//		count = it->first;
-		//	}
-		//}
+	////finde neue nicht doppelte Nummer.
+	//if (!personen[0]->)
+	//{
+	//	NewUserNum = 1;
+	//}
+	//else
+	//{
+	//	for (it = personen.begin(); it != personen.end(); it++)
+	//	{
+	//		////만약 해당 자리에 정보가 저장되어 있지 않다면
+	//		//if(!it->first <1000)
+	//		//{
+	//			//1000이 넘어가지 않는 범위 내에서
+	//		if (count < 1000) {
+	//			NewUserNum = count + 1;
+	//			//새로운 사용자번호를 지정한다.
+	//			return NewUserNum;
+	//		}
+	//		count = it->first;
+	//	}
+	//}
 public:
 	//construct
 	PersonDB()
 	{
 		Person* person = new Person();
-		this->personen.emplace(make_pair(0,person));
+		this->personen.emplace(make_pair(0, person));
 		//참조 가능한 외부파일 목록 열거하고 선택해서 불러오거나,
 		//새롭게 데이터베이스 다시 만들기.
 	};
@@ -122,7 +122,7 @@ public:
 		int i = createNewNonDuplicateUserNum();
 		Person* person = new Person();//Ruft es 'default Construct' auf.
 		person->regesterAllOfMemberVariable();
-		personen.emplace(make_pair(i,person));
+		personen.emplace(make_pair(i, person));
 		cout << "\nNeue Benutzer wird registriert.\n";
 		cout << "Benutzer Nummer : " + to_string(i) << endl;
 		person->printPersonalInfo();
@@ -144,12 +144,12 @@ public:
 		cin >> userNum;
 		if (personen[userNum])
 		{
-			cout << "User Number :" + to_string(userNum)<<"\n";
+			cout << "User Number :" + to_string(userNum) << "\n";
 			personen[userNum]->printPersonalInfo();
 		}
 		else
 		{
-			cout << "No File for UserNumber :" + to_string(userNum)<<"\n";
+			cout << "No File for UserNumber :" + to_string(userNum) << "\n";
 		}
 	}
 	void changeInfo()
@@ -159,7 +159,7 @@ public:
 		cin >> j;
 
 
-		cout << "1.Vorname  2.Nachname  3.Geburtsdatum  4.Geschlecht  5.Stadt"<<endl;
+		cout << "1.Vorname  2.Nachname  3.Geburtsdatum  4.Geschlecht  5.Stadt" << endl;
 		cout << "veraendern personal data. auswaehlen Sie der Data, den Sie veraendern moechte. :";
 		int i;
 		cin >> i;
@@ -180,7 +180,7 @@ public:
 		case 5: personen[j]->changeStadt();
 			break;
 
-		default :
+		default:
 			cout << "wrong Input.";
 			break;
 		}
@@ -189,6 +189,7 @@ public:
 	{
 		for (it = personen.begin(); it != personen.end(); it++)
 		{
+			cout << "user number : "+to_string(it->first) << endl;
 			it->second->printPersonalInfo();
 		}
 	}
@@ -204,7 +205,7 @@ public:
 	//		
 	//	}
 	//}
-	
+
 	void importCSVFile()//ifstream
 	{
 		string dummyString;
@@ -219,13 +220,13 @@ public:
 			{
 				getline(iMyFile, dummyString, ',');
 				person->setVorname(dummyString);
-				
+
 				getline(iMyFile, dummyString, ',');
 				person->setNachname(dummyString);
-				
+
 				getline(iMyFile, dummyString, ',');
 				person->setGeburtsdatum(dummyString);
-				
+
 				getline(iMyFile, dummyString, ',');
 				//받은 dummyString값을 int로 바꾸고
 				person->setSex(checkSexAndPutNumOut(dummyString));
@@ -250,35 +251,35 @@ public:
 	{
 		ofstream oMyFile;
 		oMyFile.open("Personen.csv");
-		
-		for (it = personen.begin(); it != personen.end(); it++) 
+
+		for (it = personen.begin(); it != personen.end(); it++)
 		{
-			oMyFile << it->second->getVorname() +","
-				+ it->second->getNachname()		+ ","
+			oMyFile << it->second->getVorname() + ","
+				+ it->second->getNachname() + ","
 				+ it->second->getGeburtsdatum() + ","
-				+ it->second->getSex()			+ ","
-				+ it->second->getStadt()		+ "\n";
+				+ it->second->getSex() + ","
+				+ it->second->getStadt() + "\n";
 		}
 
 		oMyFile.close();
-	/*oMyFile>>
-	fstream fs; 
-	fs.open("test.csv", ios::in);
-	this data should be sperated with "," wie CSV data
-	enum type(sex, stadt -> take as a string => male,female,undefined  stuttgart...)
-	}
-	void inputDataOfMapContainerToFile()
-	{
+		/*oMyFile>>
+		fstream fs;
+		fs.open("test.csv", ios::in);
+		this data should be sperated with "," wie CSV data
+		enum type(sex, stadt -> take as a string => male,female,undefined  stuttgart...)
+		}
+		void inputDataOfMapContainerToFile()
+		{
 		//use'TakeDataOfMapContainerOut()'method
 		*/
 	}
 	void mainFuction()
-	{	
+	{
 		int while_i = 1;//Eines "Integer" dafuer, die While loop kontrollieren.
 		while (while_i)
 		{
 			int j;
-			cout << "0.EXIT 1.Anmelden  2.Abmelden  3.AnzeigenAllenInfo  4.Nachschlagen  5.Data aendern  6.exportieren  7.importieren \n";
+			cout << "0.EXIT 1.Anmelden  2.Abmelden  3.AnzeigenAllenInfo  4.Nachschlagen  5.Data aendern  6.Loeschen  7.exportieren  8.importieren \n";
 			cout << "Welche Funtion moechten Sie benutzen?";
 			cin >> j;
 			switch (j)
@@ -295,14 +296,16 @@ public:
 				break;
 			case 5: changeInfo();
 				break;
-			case 6: exportCSVFile();
+			case 6: deletePerson();
 				break;
-			case 7: importCSVFile();
+			case 7: exportCSVFile();
 				break;
-			
+			case 8: importCSVFile();
+				break;
+
 			default:
 				break;
 			}
 		}
 	}
-}; 
+};
