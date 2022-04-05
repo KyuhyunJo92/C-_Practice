@@ -13,17 +13,50 @@ private:
 	//Zweite output muss 2, aber se ist 1000... problem
 	int createNewNonDuplicateUserNum()
 	{
-		int i = 1;
-		while (i < 1000)
+		int count = 0;
+
+		for (it = personen.begin(); it != personen.end();it++)
 		{
-			for (it = personen.begin(); it != personen.end(); it++)
-			{
-				if (!it->first == i) { return i; }
-				
-			}
-			i++;
+				if (it->first == count)
+				{
+					count++;
+				}
 		}
+		return count;
 	}
+		//for (int i = 0; i < 1000; i++)
+		//	{
+		//		if (it->first == i)
+		//		{
+		//			count = count + i;
+		//			it++;
+		//		}
+		//		else if( it->first)
+		//		{
+		//			return count;
+		//		}
+		//}
+		//int NewUserNum = 1;
+		//int i = 1;
+		//int j = 1;
+		//it = personen.begin();
+		//
+		//createNewNonDuplicateUserNum()
+		//while (it != personen.end())
+		//{
+		//	while (i)
+		//	{
+		//		if (it->second != nullptr) //if there is a value
+		//		{
+		//			if (it->first == j) //compare 
+		//			{
+		//				j++; 
+		//			}
+		//		}
+		//		else i = 0;
+		//	}
+		//	it++;
+		//}
 
 	int checkSexAndPutNumOut(string _dummyString)
 	{
@@ -70,6 +103,7 @@ private:
 		//	}
 		//}
 public:
+	//construct
 	PersonDB()
 	{
 		Person* person = new Person();

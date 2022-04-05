@@ -5,8 +5,9 @@ using namespace std;
 
 int main()
 {
-	PersonDB pdb;
-	pdb.mainFuction();
+	PersonDB* pdb;
+	pdb = new PersonDB();
+	pdb->mainFuction();
 	return 0;
 }//PersonDB::createNewNonDup..
 //function problems
