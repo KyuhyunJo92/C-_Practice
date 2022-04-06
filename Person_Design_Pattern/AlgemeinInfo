@@ -1,0 +1,5 @@
+this is a program for controlling the personal data. 
+by using the filestream, it can import or export data also.
+in this projekt I didn't use design patterns yet.
+If you have interest about design pattern,
+reference "person_***_pattern".
