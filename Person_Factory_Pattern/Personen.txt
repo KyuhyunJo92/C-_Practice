@@ -1,0 +1,21 @@
+Usernumber : 0
+Vorname    : a
+Nachname   : b
+Geburtstag : c
+Geschlecht : Undefined
+Stadt      : Unselected
+;
+Usernumber : 1
+Vorname    : KYUHYUN
+Nachname   : JO
+Geburtstag : 12061992
+Geschlecht : Male
+Stadt      : Stuttgart
+;
+Usernumber : 2
+Vorname    : HESHAM
+Nachname   : OSMANN
+Geburtstag : 12345678
+Geschlecht : Male
+Stadt      : Stuttgart
+;
