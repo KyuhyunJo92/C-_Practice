@@ -1,0 +1,3 @@
+command header has been renewed.
+functionen header is created.
+PersonDB class has only DataBase(Map<usernumber,Person*>), all function has been migrated.
