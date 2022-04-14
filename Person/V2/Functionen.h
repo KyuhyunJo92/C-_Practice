@@ -1,10 +1,3 @@
-#pragma once
-#include "PersonDB.h"
-#include "Person.h"
-#include "Common.h"
-
-
-
 class RegisterNewPerson
 {
 private:
@@ -181,6 +174,9 @@ public:
 				Person* person = new Person();
 
 				getline(iMyFile, dummyString, ',');
+				i = stoi(dummyString);
+
+				getline(iMyFile, dummyString, ',');
 				person->setVorname(dummyString);
 
 				getline(iMyFile, dummyString, ',');
@@ -199,7 +195,6 @@ public:
 				//받은 dummyString값을 int로 바꾸고
 				person->setStadt(checkSexAndPutNumOut(dummyString));
 
-				i = CreateNewNonDuplicateUserNum(pdb).execute();
 				pdb->personen.emplace(make_pair(i, person));
 			}
 			//while (getline(iMyFile, dummyString,','));
@@ -404,3 +399,36 @@ int checkSexAndPutNumOut(string _dummyString)
 
 	return i;
 }
+
+/*void mainFuction()
+{
+int while_i = 1;//Eines "Integer" dafuer, die While loop kontrollieren.
+while (while_i)
+{
+int j;
+cout << "0.EXIT 1.Anmelden  2.Abmelden  3.AnzeigenAllenInfo  4.Nachschlagen  5.Data aendern  6.exportieren  7.importieren \n";
+cout << "Welche Funtion moechten Sie benutzen?";
+cin >> j;
+switch (j)
+{
+case 0: while_i = 0;
+break;
+case 1: registerNewPerson();
+break;
+case 2: deletePerson();
+break;
+case 3: viewAllInfo();
+break;
+case 4: searchInfo();
+break;
+case 5: changeInfo();
+break;
+case 6: exportCSVFile();
+break;
+case 7: importCSVFile();
+break;
+default:
+break;
+}
+}
+}*/
