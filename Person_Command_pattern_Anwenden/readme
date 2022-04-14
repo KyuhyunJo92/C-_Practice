@@ -1,5 +1,0 @@
-this project is designed with command pattern.
-by seperating the "call" and "execution",
-this project follows "Dependency Inversion Priziple".
-
-only 'Command.h' file has been added. check the code.
