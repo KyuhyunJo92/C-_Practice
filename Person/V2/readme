@@ -1,5 +1,5 @@
 command header has been renewed.
-functionen header is created.
-PersonDB class has only DataBase(Map<usernumber,Person*>), all function has been migrated.
+functionen header has been newly created.
+PersonDB class has only DataBase(Map<usernumber,Person*>), all function has been migrated to Funtuinen Header.
 
 OCP is very important.
