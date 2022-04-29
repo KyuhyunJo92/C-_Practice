@@ -1,0 +1,3 @@
+Alle Methoden von Class PersonDB haben als einzele Klass erstellt worden.
+das bedeutet, alle Funktionsbenutzungen werden speichert werden. 
+Wenn wir  "Stack funktion" benutzt, kann mann "UNDO" Funktion umsetzen.
